@@ -4,19 +4,41 @@
     <meta charset="utf-8" />
     <meta name="description" content="welcome to my project" />
     <meta name="author" content="Kwang soopark" />
-    <title>This is HTML Tutorial</title>
+    <title>box model</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: antiquewhite;
+        height: 100%;
+      }
+      .box {
+        background-color: aqua;
+        width: 50%;
+        height: 50%;
+        padding-top: 50px;
+        padding-left: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-width: 5px;
+        border-style: dashed;
+        border-color: green;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        border-width: 5px;
+        border-style: dashed;
+        border-color: red;
+      }
+    </style>
   </head>
   <body>
-    <section>
-      <header id="heanderNumberone" class="defaultHeader">
-        <h1>Title of a section</h1>
-      </header>
-    </section>
-
-    <div>
-      <header id="differentHeader" class="defaultHeader">
-        Title of the unknown container
-      </header>
+    <div class="box">
+      <div class="inside-box"></div>
     </div>
   </body>
 </html>
